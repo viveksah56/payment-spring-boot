@@ -1,23 +1,24 @@
-
-
-# Payments
 payment:
   stripe:
-    secret-key: sk_test_51TZllICK45PdumtGzGEHeLpLUHxr4OdxoPzaFtCVtIEbsWuDjxjSxNu9NNhVVL5LmzsN0aSbMf8sQ1D4lP5nt83k00BU6mN6n9
-    public-key: pk_test_51TZllICK45PdumtGlCO0VsCU9IpxYC1qiOs5DK7uZWuEUdETRXjr24PbZUmoXHTN0sXg8kiZHoTHu1hNkx1mrMbO00V8q2uSXm
-    webhook-secret: ${STRIPE_WEBHOOK_SECRET:whsec_placeholder}
+    secret-key: sk_test_placeholder
+    public-key: pk_test_placeholder
+    webhook-secret: whsec_placeholder
+
   razorpay:
-    secret-key: ${RAZORPAY_SECRET_KEY:rzp_test_placeholder}
-    webhook-secret: ${RAZORPAY_WEBHOOK_SECRET:whsec_placeholder}
+    key-id: rzp_test_placeholder
+    secret-key: rzp_test_placeholder
+    webhook-secret: whsec_placeholder
 
-
-
-#Jwt Configuration
 jwt:
-  secret: ${JWT_SECRET:biSATc5TwmekoReHTZyJfrgSHSWJljvcC8fSSKYp8v5b5vBRwuKihPEaDFVSkat7PyPSeMjURb29fYiCZ0vMlO}
-  expiration: ${JWT_EXPIRATION:3600000} # 1 hour in milliseconds
-  prefix: ${JWT_PREFIX:Bearer}
-  header: ${JWT_HEADER:Authorization}
-  token-type: ${JWT_TOKEN_TYPE:}
-  refresh-expiration: ${JWT_REFRESH_EXPIRATION:86400000}  # 1 day in milliseconds
+  secret: biSATc5TwmekoReHTZyJfrgSHSWJljvcC8fSSKYp8v5b5vBRwuKihPEaDFVSkat7PyPSeMjURb29fYiCZ0vMlO
+  expiration: 3600000
+  refresh-expiration: 86400000
+  remember-me-expiration: 2592000000
+  prefix: Bearer
+  header: Authorization
+  token-type: Bearer
 
+app:
+  cookie:
+    domain: localhost
+    secure: false

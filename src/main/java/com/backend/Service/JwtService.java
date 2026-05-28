@@ -14,10 +14,7 @@ import org.springframework.stereotype.Service;
 
 import javax.crypto.SecretKey;
 import java.time.Instant;
-import java.util.Date;
-import java.util.List;
-import java.util.Map;
-import java.util.UUID;
+import java.util.*;
 
 @Slf4j
 @Service
@@ -33,6 +30,10 @@ public class JwtService {
     @Getter
     @Value("${jwt.refresh-expiration}")
     private long refreshTokenExpiration;
+
+    @Getter
+    @Value("${jwt.remember-me-expiration:2592000000}")
+    private long rememberMeExpiration;
 
     @Getter
     @Value("${jwt.prefix}")
@@ -63,29 +64,60 @@ public class JwtService {
         List<String> authorities = authentication.getAuthorities()
                 .stream()
                 .map(GrantedAuthority::getAuthority)
+                .filter(a -> a != null && a.startsWith("ROLE_"))
                 .toList();
+
+        Map<String, Object> claims = new LinkedHashMap<>(extraClaims);
+        claims.put("authorities", authorities);
+        claims.put("type", "ACCESS");
 
         return Jwts.builder()
                 .subject(authentication.getName())
                 .id(UUID.randomUUID().toString())
                 .issuedAt(Date.from(now))
                 .expiration(Date.from(now.plusMillis(expiration)))
-                .claim("authorities", authorities)
-                .claim("type", "ACCESS")
-                .claims(extraClaims)
+                .claims(claims)
                 .signWith(signingKey)
                 .compact();
     }
 
     public String generateRefreshToken(Authentication authentication) {
+        return generateRefreshToken(authentication, false);
+    }
+
+    public String generateRefreshToken(Authentication authentication, boolean rememberMe) {
         Instant now = Instant.now();
+        long ttl = rememberMe ? rememberMeExpiration : refreshTokenExpiration;
 
         return Jwts.builder()
                 .subject(authentication.getName())
                 .id(UUID.randomUUID().toString())
                 .issuedAt(Date.from(now))
-                .expiration(Date.from(now.plusMillis(refreshTokenExpiration)))
+                .expiration(Date.from(now.plusMillis(ttl)))
                 .claim("type", "REFRESH")
+                .claim("rememberMe", rememberMe)
+                .signWith(signingKey)
+                .compact();
+    }
+
+    public String refreshAccessToken(String refreshToken) {
+        if (!isRefreshToken(refreshToken) || isTokenExpired(refreshToken)) {
+            throw new IllegalArgumentException("Invalid or expired refresh token");
+        }
+
+        String username = extractUsername(refreshToken);
+        if (username == null) {
+            throw new IllegalArgumentException("Malformed refresh token");
+        }
+
+        Instant now = Instant.now();
+
+        return Jwts.builder()
+                .subject(username)
+                .id(UUID.randomUUID().toString())
+                .issuedAt(Date.from(now))
+                .expiration(Date.from(now.plusMillis(expiration)))
+                .claim("type", "ACCESS")
                 .signWith(signingKey)
                 .compact();
     }
@@ -111,14 +143,10 @@ public class JwtService {
     public List<String> extractAuthorities(String token) {
         Claims claims = extractAllClaims(token);
         if (claims == null) return List.of();
-
         Object raw = claims.get("authorities");
         if (raw instanceof List<?> list) {
-            return list.stream()
-                    .map(Object::toString)
-                    .toList();
+            return list.stream().map(Object::toString).toList();
         }
-
         return List.of();
     }
 
@@ -138,13 +166,23 @@ public class JwtService {
     public long getRemainingExpiration(String token) {
         Claims claims = extractAllClaims(token);
         if (claims == null) return 0;
-        long expireAt = claims.getExpiration().getTime();
-        long now      = Instant.now().toEpochMilli();
-        return Math.max(0, (expireAt - now) / 1000);
+        return Math.max(0, (claims.getExpiration().getTime() - Instant.now().toEpochMilli()) / 1000);
+    }
+
+    public boolean extractRememberMe(String token) {
+        Claims claims = extractAllClaims(token);
+        if (claims == null) return false;
+        Object val = claims.get("rememberMe");
+        return val instanceof Boolean b && b;
     }
 
     private boolean isAccessToken(String token) {
         Claims claims = extractAllClaims(token);
         return claims != null && "ACCESS".equals(claims.get("type"));
+    }
+
+    private boolean isRefreshToken(String token) {
+        Claims claims = extractAllClaims(token);
+        return claims != null && "REFRESH".equals(claims.get("type"));
     }
 }

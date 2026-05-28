@@ -56,14 +56,11 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
                         null,
                         userDetails.getAuthorities()
                 );
-
                 authToken.setDetails(new WebAuthenticationDetailsSource().buildDetails(request));
                 SecurityContextHolder.getContext().setAuthentication(authToken);
-
-                log.debug("Authenticated user '{}' with roles '{}' on '{}'",
-                        username, userDetails.getAuthorities(), request.getRequestURI());
+                log.debug("Authenticated '{}' on '{}'", username, request.getRequestURI());
             } else {
-                log.warn("Invalid JWT token for user '{}' on '{}'", username, request.getRequestURI());
+                log.warn("Invalid JWT for '{}' on '{}'", username, request.getRequestURI());
             }
         }
 

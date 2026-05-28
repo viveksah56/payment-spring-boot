@@ -19,4 +19,5 @@ public class BeanConfig {
     AuthenticationManager authenticationManager(AuthenticationConfiguration configuration) {
         return configuration.getAuthenticationManager();
     }
+
 }
