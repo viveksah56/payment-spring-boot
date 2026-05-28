@@ -20,7 +20,6 @@ public class ProductController {
     private final ProductService productService;
 
     @GetMapping
-    @PreAuthorize("isAuthenticated()")
     public ResponseEntity<ApiResponse<PaginationResponse<ProductResponse>>> getProducts(
             @RequestParam(defaultValue = "1") int page,
             @RequestParam(defaultValue = "10") int size,

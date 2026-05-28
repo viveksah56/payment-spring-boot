@@ -3326,3 +3326,1971 @@ Consider defining a bean of type 'com.backend.Service.AuthService' in your confi
 2026-05-29 02:55:20.684  WARN 89516 --- [http-nio-0.0.0.0-8000-exec-7] c.b.Filter.JwtAuthenticationEntryPoint   : Unauthorized access attempt on '/api/v1/refresh': Full authentication is required to access this resourceAnonymousAuthenticationToken [Principal=anonymousUser, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_ANONYMOUS]]
 2026-05-29 02:55:21.578  WARN 89516 --- [http-nio-0.0.0.0-8000-exec-8] com.backend.Service.JwtService           : JWT parsing failed: JWT expired 225431578 milliseconds ago at 2026-05-26T06:33:10.000Z. Current time: 2026-05-28T21:10:21.578Z. Allowed clock skew: 0 milliseconds.
 2026-05-29 02:55:21.579  WARN 89516 --- [http-nio-0.0.0.0-8000-exec-8] c.b.Filter.JwtAuthenticationEntryPoint   : Unauthorized access attempt on '/api/v1/refresh': Full authentication is required to access this resourceAnonymousAuthenticationToken [Principal=anonymousUser, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_ANONYMOUS]]
+2026-05-29 02:59:44.090  INFO 89516 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2026-05-29 02:59:44.105  INFO 89516 --- [Thread-1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-29 02:59:44.110  INFO 89516 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-05-29 02:59:44.127  INFO 89516 --- [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-29 02:59:44.130  INFO 89516 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-05-29 02:59:44.131  INFO 89516 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-05-29 02:59:44.196  INFO 89516 --- [restartedMain] com.backend.BackendApplication           : Starting BackendApplication using Java 25.0.2 with PID 89516 (/Users/bibeksah/Desktop/Projects/test-java/backend/target/classes started by bibeksah in /Users/bibeksah/Desktop/Projects/test-java/backend)
+2026-05-29 02:59:44.196 DEBUG 89516 --- [restartedMain] com.backend.BackendApplication           : Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-05-29 02:59:44.196  INFO 89516 --- [restartedMain] com.backend.BackendApplication           : No active profile set, falling back to 1 default profile: "default"
+2026-05-29 02:59:44.284  INFO 89516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-05-29 02:59:44.284  INFO 89516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-29 02:59:44.290  INFO 89516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 5 JPA repository interfaces.
+2026-05-29 02:59:44.293  INFO 89516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-05-29 02:59:44.293  INFO 89516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-05-29 02:59:44.295  INFO 89516 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.OrderRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 02:59:44.295  INFO 89516 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.PaymentRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 02:59:44.295  INFO 89516 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 02:59:44.295  INFO 89516 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.RoleRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 02:59:44.295  INFO 89516 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 02:59:44.295  INFO 89516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 Redis repository interfaces.
+2026-05-29 02:59:44.370  INFO 89516 --- [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8000 (http)
+2026-05-29 02:59:44.370  INFO 89516 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-29 02:59:44.370  INFO 89516 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-29 02:59:44.375  INFO 89516 --- [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 178 ms
+2026-05-29 02:59:44.395  INFO 89516 --- [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-29 02:59:44.404  INFO 89516 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-29 02:59:44.404  INFO 89516 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-05-29 02:59:44.412  INFO 89516 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1ce165a8
+2026-05-29 02:59:44.412  INFO 89516 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-05-29 02:59:44.413  WARN 89516 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-29 02:59:44.413  INFO 89516 --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/spring-backend]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.6
+	Default catalog/schema: spring-backend/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-29 02:59:44.481  INFO 89516 --- [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-29 02:59:44.510  INFO 89516 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-29 02:59:44.569  INFO 89516 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter jwtFilterRegistration was not registered (disabled)
+2026-05-29 02:59:44.649  WARN 89516 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-29 02:59:44.889  INFO 89516 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-05-29 02:59:44.910  INFO 89516 --- [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8000 (http) with context path '/api/v1'
+2026-05-29 02:59:44.911  INFO 89516 --- [restartedMain] com.backend.BackendApplication           : Started BackendApplication in 0.727 seconds (process running for 782.006)
+2026-05-29 02:59:44.913 DEBUG 89516 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        r1_0.role_id,
+        r1_0.created_at,
+        r1_0.created_by,
+        r1_0.deleted,
+        r1_0.deleted_at,
+        r1_0.deleted_by,
+        r1_0.description,
+        r1_0.name,
+        r1_0.updated_at,
+        r1_0.updated_by 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-05-29 02:59:44.913 TRACE 89516 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:ENUM) <- [ADMIN]
+2026-05-29 02:59:44.915 DEBUG 89516 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        r1_0.role_id,
+        r1_0.created_at,
+        r1_0.created_by,
+        r1_0.deleted,
+        r1_0.deleted_at,
+        r1_0.deleted_by,
+        r1_0.description,
+        r1_0.name,
+        r1_0.updated_at,
+        r1_0.updated_by 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-05-29 02:59:44.915 TRACE 89516 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:ENUM) <- [USER]
+2026-05-29 02:59:44.915 DEBUG 89516 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        r1_0.role_id,
+        r1_0.created_at,
+        r1_0.created_by,
+        r1_0.deleted,
+        r1_0.deleted_at,
+        r1_0.deleted_by,
+        r1_0.description,
+        r1_0.name,
+        r1_0.updated_at,
+        r1_0.updated_by 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-05-29 02:59:44.916 TRACE 89516 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:ENUM) <- [MANAGER]
+2026-05-29 02:59:44.916 DEBUG 89516 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        r1_0.role_id,
+        r1_0.created_at,
+        r1_0.created_by,
+        r1_0.deleted,
+        r1_0.deleted_at,
+        r1_0.deleted_by,
+        r1_0.description,
+        r1_0.name,
+        r1_0.updated_at,
+        r1_0.updated_by 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-05-29 02:59:44.916 TRACE 89516 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:ENUM) <- [GUEST]
+2026-05-29 02:59:44.917  INFO 89516 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-05-29 02:59:55.362  INFO 89516 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2026-05-29 02:59:55.364  INFO 89516 --- [Thread-6] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-29 02:59:55.367  INFO 89516 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-05-29 02:59:55.372  INFO 89516 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-29 02:59:55.373  INFO 89516 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2026-05-29 02:59:55.375  INFO 89516 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2026-05-29 02:59:55.422  INFO 89516 --- [restartedMain] com.backend.BackendApplication           : Starting BackendApplication using Java 25.0.2 with PID 89516 (/Users/bibeksah/Desktop/Projects/test-java/backend/target/classes started by bibeksah in /Users/bibeksah/Desktop/Projects/test-java/backend)
+2026-05-29 02:59:55.422 DEBUG 89516 --- [restartedMain] com.backend.BackendApplication           : Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-05-29 02:59:55.422  INFO 89516 --- [restartedMain] com.backend.BackendApplication           : No active profile set, falling back to 1 default profile: "default"
+2026-05-29 02:59:55.493  INFO 89516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-05-29 02:59:55.493  INFO 89516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-29 02:59:55.498  INFO 89516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 5 JPA repository interfaces.
+2026-05-29 02:59:55.501  INFO 89516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-05-29 02:59:55.501  INFO 89516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-05-29 02:59:55.502  INFO 89516 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.OrderRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 02:59:55.503  INFO 89516 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.PaymentRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 02:59:55.503  INFO 89516 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 02:59:55.503  INFO 89516 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.RoleRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 02:59:55.503  INFO 89516 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 02:59:55.503  INFO 89516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 Redis repository interfaces.
+2026-05-29 02:59:55.565  INFO 89516 --- [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8000 (http)
+2026-05-29 02:59:55.565  INFO 89516 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-29 02:59:55.565  INFO 89516 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-29 02:59:55.570  INFO 89516 --- [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 148 ms
+2026-05-29 02:59:55.588  INFO 89516 --- [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-29 02:59:55.595  INFO 89516 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-29 02:59:55.596  INFO 89516 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2026-05-29 02:59:55.603  INFO 89516 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@62a50f87
+2026-05-29 02:59:55.603  INFO 89516 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2026-05-29 02:59:55.604  WARN 89516 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-29 02:59:55.604  INFO 89516 --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/spring-backend]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.6
+	Default catalog/schema: spring-backend/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-29 02:59:55.649  INFO 89516 --- [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-29 02:59:55.672  INFO 89516 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-29 02:59:55.727  INFO 89516 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter jwtFilterRegistration was not registered (disabled)
+2026-05-29 02:59:55.804  WARN 89516 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-29 02:59:56.026  INFO 89516 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-05-29 02:59:56.046  INFO 89516 --- [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8000 (http) with context path '/api/v1'
+2026-05-29 02:59:56.047  INFO 89516 --- [restartedMain] com.backend.BackendApplication           : Started BackendApplication in 0.635 seconds (process running for 793.142)
+2026-05-29 02:59:56.049 DEBUG 89516 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        r1_0.role_id,
+        r1_0.created_at,
+        r1_0.created_by,
+        r1_0.deleted,
+        r1_0.deleted_at,
+        r1_0.deleted_by,
+        r1_0.description,
+        r1_0.name,
+        r1_0.updated_at,
+        r1_0.updated_by 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-05-29 02:59:56.049 TRACE 89516 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:ENUM) <- [ADMIN]
+2026-05-29 02:59:56.050 DEBUG 89516 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        r1_0.role_id,
+        r1_0.created_at,
+        r1_0.created_by,
+        r1_0.deleted,
+        r1_0.deleted_at,
+        r1_0.deleted_by,
+        r1_0.description,
+        r1_0.name,
+        r1_0.updated_at,
+        r1_0.updated_by 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-05-29 02:59:56.050 TRACE 89516 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:ENUM) <- [USER]
+2026-05-29 02:59:56.050 DEBUG 89516 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        r1_0.role_id,
+        r1_0.created_at,
+        r1_0.created_by,
+        r1_0.deleted,
+        r1_0.deleted_at,
+        r1_0.deleted_by,
+        r1_0.description,
+        r1_0.name,
+        r1_0.updated_at,
+        r1_0.updated_by 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-05-29 02:59:56.051 TRACE 89516 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:ENUM) <- [MANAGER]
+2026-05-29 02:59:56.051 DEBUG 89516 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        r1_0.role_id,
+        r1_0.created_at,
+        r1_0.created_by,
+        r1_0.deleted,
+        r1_0.deleted_at,
+        r1_0.deleted_by,
+        r1_0.description,
+        r1_0.name,
+        r1_0.updated_at,
+        r1_0.updated_by 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-05-29 02:59:56.051 TRACE 89516 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:ENUM) <- [GUEST]
+2026-05-29 02:59:56.052  INFO 89516 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-05-29 03:00:49.975  INFO 89516 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 5 class path changes (5 additions, 0 deletions, 0 modifications)
+2026-05-29 03:00:49.982  INFO 89516 --- [Thread-10] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-29 03:00:49.986  INFO 89516 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-05-29 03:00:49.994  INFO 89516 --- [Thread-10] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-29 03:00:49.996  INFO 89516 --- [Thread-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2026-05-29 03:00:50.009  INFO 89516 --- [Thread-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2026-05-29 03:00:50.086  INFO 89516 --- [restartedMain] com.backend.BackendApplication           : Starting BackendApplication using Java 25.0.2 with PID 89516 (/Users/bibeksah/Desktop/Projects/test-java/backend/target/classes started by bibeksah in /Users/bibeksah/Desktop/Projects/test-java/backend)
+2026-05-29 03:00:50.086 DEBUG 89516 --- [restartedMain] com.backend.BackendApplication           : Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-05-29 03:00:50.086  INFO 89516 --- [restartedMain] com.backend.BackendApplication           : No active profile set, falling back to 1 default profile: "default"
+2026-05-29 03:00:50.164  INFO 89516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-05-29 03:00:50.164  INFO 89516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-29 03:00:50.170  INFO 89516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 5 JPA repository interfaces.
+2026-05-29 03:00:50.173  INFO 89516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-05-29 03:00:50.173  INFO 89516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-05-29 03:00:50.175  INFO 89516 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.OrderRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 03:00:50.175  INFO 89516 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.PaymentRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 03:00:50.175  INFO 89516 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 03:00:50.175  INFO 89516 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.RoleRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 03:00:50.175  INFO 89516 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 03:00:50.175  INFO 89516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 Redis repository interfaces.
+2026-05-29 03:00:50.247  INFO 89516 --- [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8000 (http)
+2026-05-29 03:00:50.247  INFO 89516 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-29 03:00:50.247  INFO 89516 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-29 03:00:50.253  INFO 89516 --- [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 166 ms
+2026-05-29 03:00:50.270  INFO 89516 --- [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-29 03:00:50.278  INFO 89516 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-29 03:00:50.279  INFO 89516 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2026-05-29 03:00:50.288  INFO 89516 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@15bbced0
+2026-05-29 03:00:50.288  INFO 89516 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2026-05-29 03:00:50.289  WARN 89516 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-29 03:00:50.289  INFO 89516 --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/spring-backend]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.6
+	Default catalog/schema: spring-backend/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-29 03:00:50.338  INFO 89516 --- [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-29 03:00:50.361  INFO 89516 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-29 03:00:50.417  INFO 89516 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter jwtFilterRegistration was not registered (disabled)
+2026-05-29 03:00:50.492  WARN 89516 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-29 03:00:50.711  INFO 89516 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-05-29 03:00:50.731  INFO 89516 --- [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8000 (http) with context path '/api/v1'
+2026-05-29 03:00:50.732  INFO 89516 --- [restartedMain] com.backend.BackendApplication           : Started BackendApplication in 0.655 seconds (process running for 847.826)
+2026-05-29 03:00:50.734 DEBUG 89516 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        r1_0.role_id,
+        r1_0.created_at,
+        r1_0.created_by,
+        r1_0.deleted,
+        r1_0.deleted_at,
+        r1_0.deleted_by,
+        r1_0.description,
+        r1_0.name,
+        r1_0.updated_at,
+        r1_0.updated_by 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-05-29 03:00:50.734 TRACE 89516 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:ENUM) <- [ADMIN]
+2026-05-29 03:00:50.735 DEBUG 89516 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        r1_0.role_id,
+        r1_0.created_at,
+        r1_0.created_by,
+        r1_0.deleted,
+        r1_0.deleted_at,
+        r1_0.deleted_by,
+        r1_0.description,
+        r1_0.name,
+        r1_0.updated_at,
+        r1_0.updated_by 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-05-29 03:00:50.735 TRACE 89516 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:ENUM) <- [USER]
+2026-05-29 03:00:50.736 DEBUG 89516 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        r1_0.role_id,
+        r1_0.created_at,
+        r1_0.created_by,
+        r1_0.deleted,
+        r1_0.deleted_at,
+        r1_0.deleted_by,
+        r1_0.description,
+        r1_0.name,
+        r1_0.updated_at,
+        r1_0.updated_by 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-05-29 03:00:50.736 TRACE 89516 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:ENUM) <- [MANAGER]
+2026-05-29 03:00:50.736 DEBUG 89516 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        r1_0.role_id,
+        r1_0.created_at,
+        r1_0.created_by,
+        r1_0.deleted,
+        r1_0.deleted_at,
+        r1_0.deleted_by,
+        r1_0.description,
+        r1_0.name,
+        r1_0.updated_at,
+        r1_0.updated_by 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-05-29 03:00:50.737 TRACE 89516 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:ENUM) <- [GUEST]
+2026-05-29 03:00:50.738  INFO 89516 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-05-29 03:01:11.320  INFO 89516 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2026-05-29 03:01:11.321  INFO 89516 --- [Thread-14] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-29 03:01:11.322  INFO 89516 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-05-29 03:01:11.326  INFO 89516 --- [Thread-14] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-29 03:01:11.326  INFO 89516 --- [Thread-14] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2026-05-29 03:01:11.327  INFO 89516 --- [Thread-14] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2026-05-29 03:01:11.369  INFO 89516 --- [restartedMain] com.backend.BackendApplication           : Starting BackendApplication using Java 25.0.2 with PID 89516 (/Users/bibeksah/Desktop/Projects/test-java/backend/target/classes started by bibeksah in /Users/bibeksah/Desktop/Projects/test-java/backend)
+2026-05-29 03:01:11.369 DEBUG 89516 --- [restartedMain] com.backend.BackendApplication           : Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-05-29 03:01:11.369  INFO 89516 --- [restartedMain] com.backend.BackendApplication           : No active profile set, falling back to 1 default profile: "default"
+2026-05-29 03:01:11.438  INFO 89516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-05-29 03:01:11.438  INFO 89516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-29 03:01:11.443  INFO 89516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 5 JPA repository interfaces.
+2026-05-29 03:01:11.446  INFO 89516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-05-29 03:01:11.446  INFO 89516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-05-29 03:01:11.447  INFO 89516 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.OrderRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 03:01:11.447  INFO 89516 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.PaymentRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 03:01:11.447  INFO 89516 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 03:01:11.447  INFO 89516 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.RoleRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 03:01:11.447  INFO 89516 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 03:01:11.447  INFO 89516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 Redis repository interfaces.
+2026-05-29 03:01:11.507  INFO 89516 --- [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8000 (http)
+2026-05-29 03:01:11.507  INFO 89516 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-29 03:01:11.507  INFO 89516 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-29 03:01:11.512  INFO 89516 --- [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 143 ms
+2026-05-29 03:01:11.528  INFO 89516 --- [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-29 03:01:11.538  INFO 89516 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-29 03:01:11.538  INFO 89516 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2026-05-29 03:01:11.545  INFO 89516 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@366576a5
+2026-05-29 03:01:11.545  INFO 89516 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2026-05-29 03:01:11.545  WARN 89516 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-29 03:01:11.546  INFO 89516 --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/spring-backend]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.6
+	Default catalog/schema: spring-backend/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-29 03:01:11.596  INFO 89516 --- [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-29 03:01:11.621  INFO 89516 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-29 03:01:11.676  INFO 89516 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter jwtFilterRegistration was not registered (disabled)
+2026-05-29 03:01:11.756  WARN 89516 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-29 03:01:12.080  INFO 89516 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-05-29 03:01:12.117  INFO 89516 --- [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8000 (http) with context path '/api/v1'
+2026-05-29 03:01:12.119  INFO 89516 --- [restartedMain] com.backend.BackendApplication           : Started BackendApplication in 0.759 seconds (process running for 869.213)
+2026-05-29 03:01:12.122 DEBUG 89516 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        r1_0.role_id,
+        r1_0.created_at,
+        r1_0.created_by,
+        r1_0.deleted,
+        r1_0.deleted_at,
+        r1_0.deleted_by,
+        r1_0.description,
+        r1_0.name,
+        r1_0.updated_at,
+        r1_0.updated_by 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-05-29 03:01:12.122 TRACE 89516 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:ENUM) <- [ADMIN]
+2026-05-29 03:01:12.124 DEBUG 89516 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        r1_0.role_id,
+        r1_0.created_at,
+        r1_0.created_by,
+        r1_0.deleted,
+        r1_0.deleted_at,
+        r1_0.deleted_by,
+        r1_0.description,
+        r1_0.name,
+        r1_0.updated_at,
+        r1_0.updated_by 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-05-29 03:01:12.124 TRACE 89516 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:ENUM) <- [USER]
+2026-05-29 03:01:12.126 DEBUG 89516 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        r1_0.role_id,
+        r1_0.created_at,
+        r1_0.created_by,
+        r1_0.deleted,
+        r1_0.deleted_at,
+        r1_0.deleted_by,
+        r1_0.description,
+        r1_0.name,
+        r1_0.updated_at,
+        r1_0.updated_by 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-05-29 03:01:12.126 TRACE 89516 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:ENUM) <- [MANAGER]
+2026-05-29 03:01:12.127 DEBUG 89516 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        r1_0.role_id,
+        r1_0.created_at,
+        r1_0.created_by,
+        r1_0.deleted,
+        r1_0.deleted_at,
+        r1_0.deleted_by,
+        r1_0.description,
+        r1_0.name,
+        r1_0.updated_at,
+        r1_0.updated_by 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-05-29 03:01:12.128 TRACE 89516 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:ENUM) <- [GUEST]
+2026-05-29 03:01:12.131  INFO 89516 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-05-29 03:01:16.413  INFO 89516 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2026-05-29 03:01:16.415  INFO 89516 --- [Thread-18] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-29 03:01:16.418  INFO 89516 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-05-29 03:01:16.423  INFO 89516 --- [Thread-18] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-29 03:01:16.424  INFO 89516 --- [Thread-18] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2026-05-29 03:01:16.426  INFO 89516 --- [Thread-18] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2026-05-29 03:01:16.475  INFO 89516 --- [restartedMain] com.backend.BackendApplication           : Starting BackendApplication using Java 25.0.2 with PID 89516 (/Users/bibeksah/Desktop/Projects/test-java/backend/target/classes started by bibeksah in /Users/bibeksah/Desktop/Projects/test-java/backend)
+2026-05-29 03:01:16.475 DEBUG 89516 --- [restartedMain] com.backend.BackendApplication           : Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-05-29 03:01:16.475  INFO 89516 --- [restartedMain] com.backend.BackendApplication           : No active profile set, falling back to 1 default profile: "default"
+2026-05-29 03:01:16.534  INFO 89516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-05-29 03:01:16.534  INFO 89516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-29 03:01:16.539  INFO 89516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 5 JPA repository interfaces.
+2026-05-29 03:01:16.542  INFO 89516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-05-29 03:01:16.542  INFO 89516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-05-29 03:01:16.543  INFO 89516 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.OrderRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 03:01:16.543  INFO 89516 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.PaymentRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 03:01:16.543  INFO 89516 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 03:01:16.543  INFO 89516 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.RoleRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 03:01:16.543  INFO 89516 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 03:01:16.543  INFO 89516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 Redis repository interfaces.
+2026-05-29 03:01:16.602  INFO 89516 --- [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8000 (http)
+2026-05-29 03:01:16.602  INFO 89516 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-29 03:01:16.602  INFO 89516 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-29 03:01:16.606  INFO 89516 --- [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 130 ms
+2026-05-29 03:01:16.623  INFO 89516 --- [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-29 03:01:16.630  INFO 89516 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-29 03:01:16.631  INFO 89516 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2026-05-29 03:01:16.638  INFO 89516 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@f023899
+2026-05-29 03:01:16.638  INFO 89516 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2026-05-29 03:01:16.639  WARN 89516 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-29 03:01:16.639  INFO 89516 --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/spring-backend]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.6
+	Default catalog/schema: spring-backend/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-29 03:01:16.678  INFO 89516 --- [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-29 03:01:16.698  INFO 89516 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-29 03:01:16.753  INFO 89516 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter jwtFilterRegistration was not registered (disabled)
+2026-05-29 03:01:16.828  WARN 89516 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-29 03:01:17.049  INFO 89516 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-05-29 03:01:17.068  INFO 89516 --- [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8000 (http) with context path '/api/v1'
+2026-05-29 03:01:17.069  INFO 89516 --- [restartedMain] com.backend.BackendApplication           : Started BackendApplication in 0.602 seconds (process running for 874.164)
+2026-05-29 03:01:17.071 DEBUG 89516 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        r1_0.role_id,
+        r1_0.created_at,
+        r1_0.created_by,
+        r1_0.deleted,
+        r1_0.deleted_at,
+        r1_0.deleted_by,
+        r1_0.description,
+        r1_0.name,
+        r1_0.updated_at,
+        r1_0.updated_by 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-05-29 03:01:17.071 TRACE 89516 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:ENUM) <- [ADMIN]
+2026-05-29 03:01:17.072 DEBUG 89516 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        r1_0.role_id,
+        r1_0.created_at,
+        r1_0.created_by,
+        r1_0.deleted,
+        r1_0.deleted_at,
+        r1_0.deleted_by,
+        r1_0.description,
+        r1_0.name,
+        r1_0.updated_at,
+        r1_0.updated_by 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-05-29 03:01:17.072 TRACE 89516 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:ENUM) <- [USER]
+2026-05-29 03:01:17.073 DEBUG 89516 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        r1_0.role_id,
+        r1_0.created_at,
+        r1_0.created_by,
+        r1_0.deleted,
+        r1_0.deleted_at,
+        r1_0.deleted_by,
+        r1_0.description,
+        r1_0.name,
+        r1_0.updated_at,
+        r1_0.updated_by 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-05-29 03:01:17.073 TRACE 89516 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:ENUM) <- [MANAGER]
+2026-05-29 03:01:17.073 DEBUG 89516 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        r1_0.role_id,
+        r1_0.created_at,
+        r1_0.created_by,
+        r1_0.deleted,
+        r1_0.deleted_at,
+        r1_0.deleted_by,
+        r1_0.description,
+        r1_0.name,
+        r1_0.updated_at,
+        r1_0.updated_by 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-05-29 03:01:17.074 TRACE 89516 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:ENUM) <- [GUEST]
+2026-05-29 03:01:17.074  INFO 89516 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-05-29 03:01:26.525  INFO 89516 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (1 addition, 0 deletions, 1 modification)
+2026-05-29 03:01:26.529  INFO 89516 --- [Thread-22] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-29 03:01:26.532  INFO 89516 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-05-29 03:01:26.538  INFO 89516 --- [Thread-22] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-29 03:01:26.539  INFO 89516 --- [Thread-22] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2026-05-29 03:01:26.541  INFO 89516 --- [Thread-22] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2026-05-29 03:01:26.589  INFO 89516 --- [restartedMain] com.backend.BackendApplication           : Starting BackendApplication using Java 25.0.2 with PID 89516 (/Users/bibeksah/Desktop/Projects/test-java/backend/target/classes started by bibeksah in /Users/bibeksah/Desktop/Projects/test-java/backend)
+2026-05-29 03:01:26.589 DEBUG 89516 --- [restartedMain] com.backend.BackendApplication           : Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-05-29 03:01:26.589  INFO 89516 --- [restartedMain] com.backend.BackendApplication           : No active profile set, falling back to 1 default profile: "default"
+2026-05-29 03:01:26.653  INFO 89516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-05-29 03:01:26.653  INFO 89516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-29 03:01:26.658  INFO 89516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 5 JPA repository interfaces.
+2026-05-29 03:01:26.660  INFO 89516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-05-29 03:01:26.660  INFO 89516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-05-29 03:01:26.662  INFO 89516 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.OrderRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 03:01:26.662  INFO 89516 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.PaymentRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 03:01:26.662  INFO 89516 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 03:01:26.662  INFO 89516 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.RoleRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 03:01:26.662  INFO 89516 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 03:01:26.662  INFO 89516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 Redis repository interfaces.
+2026-05-29 03:01:26.724  INFO 89516 --- [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8000 (http)
+2026-05-29 03:01:26.724  INFO 89516 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-29 03:01:26.724  INFO 89516 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-29 03:01:26.729  INFO 89516 --- [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 140 ms
+2026-05-29 03:01:26.746  INFO 89516 --- [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-29 03:01:26.754  INFO 89516 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-29 03:01:26.754  INFO 89516 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2026-05-29 03:01:26.762  INFO 89516 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection com.mysql.cj.jdbc.ConnectionImpl@67e2e25a
+2026-05-29 03:01:26.762  INFO 89516 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2026-05-29 03:01:26.763  WARN 89516 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-29 03:01:26.763  INFO 89516 --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/spring-backend]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.6
+	Default catalog/schema: spring-backend/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-29 03:01:26.811  INFO 89516 --- [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-29 03:01:26.830  INFO 89516 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-29 03:01:26.885  INFO 89516 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter jwtFilterRegistration was not registered (disabled)
+2026-05-29 03:01:26.964  WARN 89516 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-29 03:01:27.185  INFO 89516 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-05-29 03:01:27.205  INFO 89516 --- [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8000 (http) with context path '/api/v1'
+2026-05-29 03:01:27.206  INFO 89516 --- [restartedMain] com.backend.BackendApplication           : Started BackendApplication in 0.626 seconds (process running for 884.3)
+2026-05-29 03:01:27.207 DEBUG 89516 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        r1_0.role_id,
+        r1_0.created_at,
+        r1_0.created_by,
+        r1_0.deleted,
+        r1_0.deleted_at,
+        r1_0.deleted_by,
+        r1_0.description,
+        r1_0.name,
+        r1_0.updated_at,
+        r1_0.updated_by 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-05-29 03:01:27.208 TRACE 89516 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:ENUM) <- [ADMIN]
+2026-05-29 03:01:27.209 DEBUG 89516 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        r1_0.role_id,
+        r1_0.created_at,
+        r1_0.created_by,
+        r1_0.deleted,
+        r1_0.deleted_at,
+        r1_0.deleted_by,
+        r1_0.description,
+        r1_0.name,
+        r1_0.updated_at,
+        r1_0.updated_by 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-05-29 03:01:27.210 TRACE 89516 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:ENUM) <- [USER]
+2026-05-29 03:01:27.210 DEBUG 89516 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        r1_0.role_id,
+        r1_0.created_at,
+        r1_0.created_by,
+        r1_0.deleted,
+        r1_0.deleted_at,
+        r1_0.deleted_by,
+        r1_0.description,
+        r1_0.name,
+        r1_0.updated_at,
+        r1_0.updated_by 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-05-29 03:01:27.211 TRACE 89516 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:ENUM) <- [MANAGER]
+2026-05-29 03:01:27.211 DEBUG 89516 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        r1_0.role_id,
+        r1_0.created_at,
+        r1_0.created_by,
+        r1_0.deleted,
+        r1_0.deleted_at,
+        r1_0.deleted_by,
+        r1_0.description,
+        r1_0.name,
+        r1_0.updated_at,
+        r1_0.updated_by 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-05-29 03:01:27.211 TRACE 89516 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:ENUM) <- [GUEST]
+2026-05-29 03:01:27.213  INFO 89516 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-05-29 03:01:45.760  INFO 89516 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2026-05-29 03:01:45.763  INFO 89516 --- [Thread-26] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-29 03:01:45.766  INFO 89516 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-05-29 03:01:45.771  INFO 89516 --- [Thread-26] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-29 03:01:45.772  INFO 89516 --- [Thread-26] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2026-05-29 03:01:45.773  INFO 89516 --- [Thread-26] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2026-05-29 03:01:45.829  INFO 89516 --- [restartedMain] com.backend.BackendApplication           : Starting BackendApplication using Java 25.0.2 with PID 89516 (/Users/bibeksah/Desktop/Projects/test-java/backend/target/classes started by bibeksah in /Users/bibeksah/Desktop/Projects/test-java/backend)
+2026-05-29 03:01:45.829 DEBUG 89516 --- [restartedMain] com.backend.BackendApplication           : Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-05-29 03:01:45.829  INFO 89516 --- [restartedMain] com.backend.BackendApplication           : No active profile set, falling back to 1 default profile: "default"
+2026-05-29 03:01:45.897  INFO 89516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-05-29 03:01:45.897  INFO 89516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-29 03:01:45.902  INFO 89516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 5 JPA repository interfaces.
+2026-05-29 03:01:45.905  INFO 89516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-05-29 03:01:45.905  INFO 89516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-05-29 03:01:45.906  INFO 89516 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.OrderRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 03:01:45.906  INFO 89516 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.PaymentRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 03:01:45.906  INFO 89516 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 03:01:45.906  INFO 89516 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.RoleRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 03:01:45.907  INFO 89516 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 03:01:45.907  INFO 89516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 Redis repository interfaces.
+2026-05-29 03:01:45.966  INFO 89516 --- [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8000 (http)
+2026-05-29 03:01:45.966  INFO 89516 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-29 03:01:45.966  INFO 89516 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-29 03:01:45.971  INFO 89516 --- [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 141 ms
+2026-05-29 03:01:45.987  INFO 89516 --- [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-29 03:01:45.994  INFO 89516 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-29 03:01:45.995  INFO 89516 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2026-05-29 03:01:46.004  INFO 89516 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-8 - Added connection com.mysql.cj.jdbc.ConnectionImpl@38e4a084
+2026-05-29 03:01:46.004  INFO 89516 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2026-05-29 03:01:46.005  WARN 89516 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-29 03:01:46.005  INFO 89516 --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/spring-backend]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.6
+	Default catalog/schema: spring-backend/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-29 03:01:46.051  INFO 89516 --- [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-29 03:01:46.075  INFO 89516 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-29 03:01:46.131  INFO 89516 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter jwtFilterRegistration was not registered (disabled)
+2026-05-29 03:01:46.214  WARN 89516 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-29 03:01:46.440  INFO 89516 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-05-29 03:01:46.463  INFO 89516 --- [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8000 (http) with context path '/api/v1'
+2026-05-29 03:01:46.466  INFO 89516 --- [restartedMain] com.backend.BackendApplication           : Started BackendApplication in 0.647 seconds (process running for 903.56)
+2026-05-29 03:01:46.469 DEBUG 89516 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        r1_0.role_id,
+        r1_0.created_at,
+        r1_0.created_by,
+        r1_0.deleted,
+        r1_0.deleted_at,
+        r1_0.deleted_by,
+        r1_0.description,
+        r1_0.name,
+        r1_0.updated_at,
+        r1_0.updated_by 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-05-29 03:01:46.469 TRACE 89516 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:ENUM) <- [ADMIN]
+2026-05-29 03:01:46.471 DEBUG 89516 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        r1_0.role_id,
+        r1_0.created_at,
+        r1_0.created_by,
+        r1_0.deleted,
+        r1_0.deleted_at,
+        r1_0.deleted_by,
+        r1_0.description,
+        r1_0.name,
+        r1_0.updated_at,
+        r1_0.updated_by 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-05-29 03:01:46.471 TRACE 89516 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:ENUM) <- [USER]
+2026-05-29 03:01:46.472 DEBUG 89516 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        r1_0.role_id,
+        r1_0.created_at,
+        r1_0.created_by,
+        r1_0.deleted,
+        r1_0.deleted_at,
+        r1_0.deleted_by,
+        r1_0.description,
+        r1_0.name,
+        r1_0.updated_at,
+        r1_0.updated_by 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-05-29 03:01:46.472 TRACE 89516 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:ENUM) <- [MANAGER]
+2026-05-29 03:01:46.473 DEBUG 89516 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        r1_0.role_id,
+        r1_0.created_at,
+        r1_0.created_by,
+        r1_0.deleted,
+        r1_0.deleted_at,
+        r1_0.deleted_by,
+        r1_0.description,
+        r1_0.name,
+        r1_0.updated_at,
+        r1_0.updated_by 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-05-29 03:01:46.473 TRACE 89516 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:ENUM) <- [GUEST]
+2026-05-29 03:01:46.474  INFO 89516 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-05-29 03:01:52.869  INFO 89516 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-05-29 03:01:52.871  INFO 89516 --- [Thread-30] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-29 03:01:52.874  INFO 89516 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-05-29 03:01:52.879  INFO 89516 --- [Thread-30] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-29 03:01:52.880  INFO 89516 --- [Thread-30] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2026-05-29 03:01:52.882  INFO 89516 --- [Thread-30] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+2026-05-29 03:01:52.932  INFO 89516 --- [restartedMain] com.backend.BackendApplication           : Starting BackendApplication using Java 25.0.2 with PID 89516 (/Users/bibeksah/Desktop/Projects/test-java/backend/target/classes started by bibeksah in /Users/bibeksah/Desktop/Projects/test-java/backend)
+2026-05-29 03:01:52.932 DEBUG 89516 --- [restartedMain] com.backend.BackendApplication           : Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-05-29 03:01:52.933  INFO 89516 --- [restartedMain] com.backend.BackendApplication           : No active profile set, falling back to 1 default profile: "default"
+2026-05-29 03:01:52.996  INFO 89516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-05-29 03:01:52.996  INFO 89516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-29 03:01:53.001  INFO 89516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 5 JPA repository interfaces.
+2026-05-29 03:01:53.003  INFO 89516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-05-29 03:01:53.003  INFO 89516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-05-29 03:01:53.004  INFO 89516 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.OrderRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 03:01:53.004  INFO 89516 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.PaymentRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 03:01:53.004  INFO 89516 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 03:01:53.004  INFO 89516 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.RoleRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 03:01:53.004  INFO 89516 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 03:01:53.004  INFO 89516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 Redis repository interfaces.
+2026-05-29 03:01:53.064  INFO 89516 --- [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8000 (http)
+2026-05-29 03:01:53.064  INFO 89516 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-29 03:01:53.064  INFO 89516 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-29 03:01:53.069  INFO 89516 --- [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 136 ms
+2026-05-29 03:01:53.085  INFO 89516 --- [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-29 03:01:53.093  INFO 89516 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-29 03:01:53.093  INFO 89516 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
+2026-05-29 03:01:53.101  INFO 89516 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-9 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1dc6e0eb
+2026-05-29 03:01:53.101  INFO 89516 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
+2026-05-29 03:01:53.102  WARN 89516 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-29 03:01:53.102  INFO 89516 --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/spring-backend]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.6
+	Default catalog/schema: spring-backend/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-29 03:01:53.142  INFO 89516 --- [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-29 03:01:53.167  INFO 89516 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-29 03:01:53.222  INFO 89516 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter jwtFilterRegistration was not registered (disabled)
+2026-05-29 03:01:53.300  WARN 89516 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-29 03:01:53.521  INFO 89516 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-05-29 03:01:53.541  INFO 89516 --- [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8000 (http) with context path '/api/v1'
+2026-05-29 03:01:53.542  INFO 89516 --- [restartedMain] com.backend.BackendApplication           : Started BackendApplication in 0.619 seconds (process running for 910.636)
+2026-05-29 03:01:53.543 DEBUG 89516 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        r1_0.role_id,
+        r1_0.created_at,
+        r1_0.created_by,
+        r1_0.deleted,
+        r1_0.deleted_at,
+        r1_0.deleted_by,
+        r1_0.description,
+        r1_0.name,
+        r1_0.updated_at,
+        r1_0.updated_by 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-05-29 03:01:53.543 TRACE 89516 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:ENUM) <- [ADMIN]
+2026-05-29 03:01:53.544 DEBUG 89516 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        r1_0.role_id,
+        r1_0.created_at,
+        r1_0.created_by,
+        r1_0.deleted,
+        r1_0.deleted_at,
+        r1_0.deleted_by,
+        r1_0.description,
+        r1_0.name,
+        r1_0.updated_at,
+        r1_0.updated_by 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-05-29 03:01:53.545 TRACE 89516 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:ENUM) <- [USER]
+2026-05-29 03:01:53.545 DEBUG 89516 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        r1_0.role_id,
+        r1_0.created_at,
+        r1_0.created_by,
+        r1_0.deleted,
+        r1_0.deleted_at,
+        r1_0.deleted_by,
+        r1_0.description,
+        r1_0.name,
+        r1_0.updated_at,
+        r1_0.updated_by 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-05-29 03:01:53.545 TRACE 89516 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:ENUM) <- [MANAGER]
+2026-05-29 03:01:53.545 DEBUG 89516 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        r1_0.role_id,
+        r1_0.created_at,
+        r1_0.created_by,
+        r1_0.deleted,
+        r1_0.deleted_at,
+        r1_0.deleted_by,
+        r1_0.description,
+        r1_0.name,
+        r1_0.updated_at,
+        r1_0.updated_by 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-05-29 03:01:53.546 TRACE 89516 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:ENUM) <- [GUEST]
+2026-05-29 03:01:53.547  INFO 89516 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-05-29 03:03:19.802  INFO 89516 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-05-29 03:03:19.821  INFO 89516 --- [Thread-34] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-29 03:03:19.826  INFO 89516 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-05-29 03:03:19.836  INFO 89516 --- [Thread-34] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-29 03:03:19.839  INFO 89516 --- [Thread-34] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
+2026-05-29 03:03:19.842  INFO 89516 --- [Thread-34] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed.
+2026-05-29 03:03:19.918  INFO 89516 --- [restartedMain] com.backend.BackendApplication           : Starting BackendApplication using Java 25.0.2 with PID 89516 (/Users/bibeksah/Desktop/Projects/test-java/backend/target/classes started by bibeksah in /Users/bibeksah/Desktop/Projects/test-java/backend)
+2026-05-29 03:03:19.918 DEBUG 89516 --- [restartedMain] com.backend.BackendApplication           : Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-05-29 03:03:19.918  INFO 89516 --- [restartedMain] com.backend.BackendApplication           : No active profile set, falling back to 1 default profile: "default"
+2026-05-29 03:03:19.992  INFO 89516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-05-29 03:03:19.992  INFO 89516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-29 03:03:19.997  INFO 89516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 5 JPA repository interfaces.
+2026-05-29 03:03:20.000  INFO 89516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-05-29 03:03:20.000  INFO 89516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-05-29 03:03:20.002  INFO 89516 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.OrderRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 03:03:20.002  INFO 89516 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.PaymentRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 03:03:20.002  INFO 89516 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 03:03:20.002  INFO 89516 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.RoleRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 03:03:20.002  INFO 89516 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 03:03:20.002  INFO 89516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 Redis repository interfaces.
+2026-05-29 03:03:20.069  INFO 89516 --- [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8000 (http)
+2026-05-29 03:03:20.069  INFO 89516 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-29 03:03:20.069  INFO 89516 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-29 03:03:20.074  INFO 89516 --- [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 156 ms
+2026-05-29 03:03:20.090  INFO 89516 --- [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-29 03:03:20.102  INFO 89516 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-29 03:03:20.102  INFO 89516 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Starting...
+2026-05-29 03:03:20.113  INFO 89516 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-10 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6c11009c
+2026-05-29 03:03:20.113  INFO 89516 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Start completed.
+2026-05-29 03:03:20.114  WARN 89516 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-29 03:03:20.115  INFO 89516 --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/spring-backend]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.6
+	Default catalog/schema: spring-backend/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-29 03:03:20.159  INFO 89516 --- [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-29 03:03:20.185  INFO 89516 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-29 03:03:20.238  INFO 89516 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter jwtFilterRegistration was not registered (disabled)
+2026-05-29 03:03:20.313  WARN 89516 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-29 03:03:20.530  INFO 89516 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-05-29 03:03:20.550  INFO 89516 --- [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8000 (http) with context path '/api/v1'
+2026-05-29 03:03:20.551  INFO 89516 --- [restartedMain] com.backend.BackendApplication           : Started BackendApplication in 0.642 seconds (process running for 997.645)
+2026-05-29 03:03:20.552 DEBUG 89516 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        r1_0.role_id,
+        r1_0.created_at,
+        r1_0.created_by,
+        r1_0.deleted,
+        r1_0.deleted_at,
+        r1_0.deleted_by,
+        r1_0.description,
+        r1_0.name,
+        r1_0.updated_at,
+        r1_0.updated_by 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-05-29 03:03:20.552 TRACE 89516 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:ENUM) <- [ADMIN]
+2026-05-29 03:03:20.554 DEBUG 89516 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        r1_0.role_id,
+        r1_0.created_at,
+        r1_0.created_by,
+        r1_0.deleted,
+        r1_0.deleted_at,
+        r1_0.deleted_by,
+        r1_0.description,
+        r1_0.name,
+        r1_0.updated_at,
+        r1_0.updated_by 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-05-29 03:03:20.554 TRACE 89516 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:ENUM) <- [USER]
+2026-05-29 03:03:20.554 DEBUG 89516 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        r1_0.role_id,
+        r1_0.created_at,
+        r1_0.created_by,
+        r1_0.deleted,
+        r1_0.deleted_at,
+        r1_0.deleted_by,
+        r1_0.description,
+        r1_0.name,
+        r1_0.updated_at,
+        r1_0.updated_by 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-05-29 03:03:20.554 TRACE 89516 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:ENUM) <- [MANAGER]
+2026-05-29 03:03:20.555 DEBUG 89516 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        r1_0.role_id,
+        r1_0.created_at,
+        r1_0.created_by,
+        r1_0.deleted,
+        r1_0.deleted_at,
+        r1_0.deleted_by,
+        r1_0.description,
+        r1_0.name,
+        r1_0.updated_at,
+        r1_0.updated_by 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-05-29 03:03:20.555 TRACE 89516 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:ENUM) <- [GUEST]
+2026-05-29 03:03:20.556  INFO 89516 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-05-29 03:04:28.947  INFO 90130 --- [restartedMain] com.backend.BackendApplication           : Starting BackendApplication using Java 25.0.2 with PID 90130 (/Users/bibeksah/Desktop/Projects/test-java/backend/target/classes started by bibeksah in /Users/bibeksah/Desktop/Projects/test-java/backend)
+2026-05-29 03:04:28.947 DEBUG 90130 --- [restartedMain] com.backend.BackendApplication           : Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-05-29 03:04:28.948  INFO 90130 --- [restartedMain] com.backend.BackendApplication           : No active profile set, falling back to 1 default profile: "default"
+2026-05-29 03:04:28.962  INFO 90130 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-05-29 03:04:28.963  INFO 90130 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-05-29 03:04:29.284  INFO 90130 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-05-29 03:04:29.285  INFO 90130 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-29 03:04:29.336  INFO 90130 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 5 JPA repository interfaces.
+2026-05-29 03:04:29.350  INFO 90130 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-05-29 03:04:29.350  INFO 90130 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-05-29 03:04:29.356  INFO 90130 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.OrderRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 03:04:29.356  INFO 90130 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.PaymentRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 03:04:29.356  INFO 90130 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 03:04:29.356  INFO 90130 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.RoleRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 03:04:29.356  INFO 90130 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 03:04:29.356  INFO 90130 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2026-05-29 03:04:29.631  INFO 90130 --- [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8000 (http)
+2026-05-29 03:04:29.636  INFO 90130 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-29 03:04:29.636  INFO 90130 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-29 03:04:29.648  INFO 90130 --- [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 685 ms
+2026-05-29 03:04:29.705  INFO 90130 --- [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-29 03:04:29.725  INFO 90130 --- [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-29 03:04:29.865  INFO 90130 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-29 03:04:29.879  INFO 90130 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-29 03:04:29.993  INFO 90130 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@b1a2530
+2026-05-29 03:04:29.994  INFO 90130 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-29 03:04:30.015  WARN 90130 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-29 03:04:30.021  INFO 90130 --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/spring-backend]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.6
+	Default catalog/schema: spring-backend/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-29 03:04:30.457  INFO 90130 --- [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-29 03:04:30.499  INFO 90130 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-29 03:04:30.529  INFO 90130 --- [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-29 03:04:30.643  INFO 90130 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter jwtFilterRegistration was not registered (disabled)
+2026-05-29 03:04:31.230  WARN 90130 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-29 03:04:31.494  WARN 90130 --- [restartedMain] i.n.r.d.DnsServerAddressStreamProviders  : Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+2026-05-29 03:04:31.725  INFO 90130 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-05-29 03:04:31.762  INFO 90130 --- [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8000 (http) with context path '/api/v1'
+2026-05-29 03:04:31.766  INFO 90130 --- [restartedMain] com.backend.BackendApplication           : Started BackendApplication in 2.963 seconds (process running for 3.205)
+2026-05-29 03:04:31.803 DEBUG 90130 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        r1_0.role_id,
+        r1_0.created_at,
+        r1_0.created_by,
+        r1_0.deleted,
+        r1_0.deleted_at,
+        r1_0.deleted_by,
+        r1_0.description,
+        r1_0.name,
+        r1_0.updated_at,
+        r1_0.updated_by 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-05-29 03:04:31.804 TRACE 90130 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:ENUM) <- [ADMIN]
+2026-05-29 03:04:31.821 DEBUG 90130 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        r1_0.role_id,
+        r1_0.created_at,
+        r1_0.created_by,
+        r1_0.deleted,
+        r1_0.deleted_at,
+        r1_0.deleted_by,
+        r1_0.description,
+        r1_0.name,
+        r1_0.updated_at,
+        r1_0.updated_by 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-05-29 03:04:31.821 TRACE 90130 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:ENUM) <- [USER]
+2026-05-29 03:04:31.822 DEBUG 90130 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        r1_0.role_id,
+        r1_0.created_at,
+        r1_0.created_by,
+        r1_0.deleted,
+        r1_0.deleted_at,
+        r1_0.deleted_by,
+        r1_0.description,
+        r1_0.name,
+        r1_0.updated_at,
+        r1_0.updated_by 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-05-29 03:04:31.822 TRACE 90130 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:ENUM) <- [MANAGER]
+2026-05-29 03:04:31.823 DEBUG 90130 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        r1_0.role_id,
+        r1_0.created_at,
+        r1_0.created_by,
+        r1_0.deleted,
+        r1_0.deleted_at,
+        r1_0.deleted_by,
+        r1_0.description,
+        r1_0.name,
+        r1_0.updated_at,
+        r1_0.updated_by 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-05-29 03:04:31.823 TRACE 90130 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:ENUM) <- [GUEST]
+2026-05-29 03:04:31.825 DEBUG 90130 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        u1_0.user_id,
+        u1_0.created_at,
+        u1_0.created_by,
+        u1_0.deleted,
+        u1_0.deleted_at,
+        u1_0.deleted_by,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.password,
+        u1_0.updated_at,
+        u1_0.updated_by 
+    from
+        user u1_0 
+    where
+        u1_0.email=?
+2026-05-29 03:04:31.826 TRACE 90130 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [admin@example.com]
+2026-05-29 03:04:31.828 DEBUG 90130 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        r1_0.role_id,
+        r1_0.created_at,
+        r1_0.created_by,
+        r1_0.deleted,
+        r1_0.deleted_at,
+        r1_0.deleted_by,
+        r1_0.description,
+        r1_0.name,
+        r1_0.updated_at,
+        r1_0.updated_by 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-05-29 03:04:31.828 TRACE 90130 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:ENUM) <- [ADMIN]
+2026-05-29 03:04:31.917  INFO 90130 --- [restartedMain] com.backend.Seeder.DataInitializer       : Admin user created: admin@example.com
+2026-05-29 03:04:31.921 DEBUG 90130 --- [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        user
+        (created_at, created_by, deleted, deleted_at, deleted_by, email, full_name, password, updated_at, updated_by, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-05-29 03:04:31.922 TRACE 90130 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:TIMESTAMP_UTC) <- [2026-05-28T21:19:31.910130Z]
+2026-05-29 03:04:31.922 TRACE 90130 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (2:VARCHAR) <- [SYSTEM]
+2026-05-29 03:04:31.922 TRACE 90130 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (3:BOOLEAN) <- [false]
+2026-05-29 03:04:31.922 TRACE 90130 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (4:TIMESTAMP_UTC) <- [null]
+2026-05-29 03:04:31.922 TRACE 90130 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (5:VARCHAR) <- [null]
+2026-05-29 03:04:31.922 TRACE 90130 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (6:VARCHAR) <- [admin@example.com]
+2026-05-29 03:04:31.922 TRACE 90130 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (7:VARCHAR) <- [System Admin]
+2026-05-29 03:04:31.922 TRACE 90130 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (8:VARCHAR) <- [$2a$10$vSU2AlIRmw.EJqEJd1r7EuTrNk4G0uX8KkAvhYNdGEg0mzvXe5DNq]
+2026-05-29 03:04:31.922 TRACE 90130 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (9:TIMESTAMP_UTC) <- [2026-05-28T21:19:31.910130Z]
+2026-05-29 03:04:31.922 TRACE 90130 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (10:VARCHAR) <- [SYSTEM]
+2026-05-29 03:04:31.922 TRACE 90130 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (11:UUID) <- [7cc4beba-2e1c-42fb-998c-e79d76e81b0d]
+2026-05-29 03:04:31.934 DEBUG 90130 --- [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        user_roles
+        (user_id, role_id) 
+    values
+        (?, ?)
+2026-05-29 03:04:31.935 TRACE 90130 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:UUID) <- [7cc4beba-2e1c-42fb-998c-e79d76e81b0d]
+2026-05-29 03:04:31.935 TRACE 90130 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (2:UUID) <- [ea951ecf-78f1-4af9-af8f-ef45cc2f0cd0]
+2026-05-29 03:04:32.224  INFO 90130 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-29 03:04:51.708  INFO 90130 --- [http-nio-0.0.0.0-8000-exec-2] c.b.S.Impl.CustomUserDetailsService      : Loading user by email: admin@example.com
+2026-05-29 03:04:51.708 DEBUG 90130 --- [http-nio-0.0.0.0-8000-exec-2] org.hibernate.SQL                        : 
+    select
+        u1_0.user_id,
+        u1_0.created_at,
+        u1_0.created_by,
+        u1_0.deleted,
+        u1_0.deleted_at,
+        u1_0.deleted_by,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.password,
+        u1_0.updated_at,
+        u1_0.updated_by 
+    from
+        user u1_0 
+    where
+        u1_0.email=?
+2026-05-29 03:04:51.708 TRACE 90130 --- [http-nio-0.0.0.0-8000-exec-2] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [admin@example.com]
+2026-05-29 03:04:51.712 DEBUG 90130 --- [http-nio-0.0.0.0-8000-exec-2] org.hibernate.SQL                        : 
+    select
+        r1_0.user_id,
+        r1_1.role_id,
+        r1_1.created_at,
+        r1_1.created_by,
+        r1_1.deleted,
+        r1_1.deleted_at,
+        r1_1.deleted_by,
+        r1_1.description,
+        r1_1.name,
+        r1_1.updated_at,
+        r1_1.updated_by 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.role_id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2026-05-29 03:04:51.712 TRACE 90130 --- [http-nio-0.0.0.0-8000-exec-2] org.hibernate.orm.jdbc.bind              : binding parameter (1:UUID) <- [7cc4beba-2e1c-42fb-998c-e79d76e81b0d]
+2026-05-29 03:04:51.714  INFO 90130 --- [http-nio-0.0.0.0-8000-exec-2] c.b.S.Impl.CustomUserDetailsService      : User 'admin@example.com' loaded with roles: [ROLE_ADMIN]
+2026-05-29 03:04:51.819 DEBUG 90130 --- [http-nio-0.0.0.0-8000-exec-2] org.hibernate.SQL                        : 
+    select
+        u1_0.user_id,
+        u1_0.created_at,
+        u1_0.created_by,
+        u1_0.deleted,
+        u1_0.deleted_at,
+        u1_0.deleted_by,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.password,
+        u1_0.updated_at,
+        u1_0.updated_by 
+    from
+        user u1_0 
+    where
+        u1_0.email=?
+2026-05-29 03:04:51.819 TRACE 90130 --- [http-nio-0.0.0.0-8000-exec-2] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [admin@example.com]
+2026-05-29 03:04:51.820  INFO 90130 --- [http-nio-0.0.0.0-8000-exec-2] c.backend.Service.Impl.AuthServiceImpl   : Login successful for 'admin@example.com'
+2026-05-29 03:05:14.715  INFO 90130 --- [http-nio-0.0.0.0-8000-exec-3] c.b.S.Impl.CustomUserDetailsService      : Loading user by email: admin@example.com
+2026-05-29 03:05:14.717 DEBUG 90130 --- [http-nio-0.0.0.0-8000-exec-3] org.hibernate.SQL                        : 
+    select
+        u1_0.user_id,
+        u1_0.created_at,
+        u1_0.created_by,
+        u1_0.deleted,
+        u1_0.deleted_at,
+        u1_0.deleted_by,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.password,
+        u1_0.updated_at,
+        u1_0.updated_by 
+    from
+        user u1_0 
+    where
+        u1_0.email=?
+2026-05-29 03:05:14.717 TRACE 90130 --- [http-nio-0.0.0.0-8000-exec-3] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [admin@example.com]
+2026-05-29 03:05:14.719 DEBUG 90130 --- [http-nio-0.0.0.0-8000-exec-3] org.hibernate.SQL                        : 
+    select
+        r1_0.user_id,
+        r1_1.role_id,
+        r1_1.created_at,
+        r1_1.created_by,
+        r1_1.deleted,
+        r1_1.deleted_at,
+        r1_1.deleted_by,
+        r1_1.description,
+        r1_1.name,
+        r1_1.updated_at,
+        r1_1.updated_by 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.role_id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2026-05-29 03:05:14.720 TRACE 90130 --- [http-nio-0.0.0.0-8000-exec-3] org.hibernate.orm.jdbc.bind              : binding parameter (1:UUID) <- [7cc4beba-2e1c-42fb-998c-e79d76e81b0d]
+2026-05-29 03:05:14.721  INFO 90130 --- [http-nio-0.0.0.0-8000-exec-3] c.b.S.Impl.CustomUserDetailsService      : User 'admin@example.com' loaded with roles: [ROLE_ADMIN]
+2026-05-29 03:05:14.811 DEBUG 90130 --- [http-nio-0.0.0.0-8000-exec-3] org.hibernate.SQL                        : 
+    select
+        u1_0.user_id,
+        u1_0.created_at,
+        u1_0.created_by,
+        u1_0.deleted,
+        u1_0.deleted_at,
+        u1_0.deleted_by,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.password,
+        u1_0.updated_at,
+        u1_0.updated_by 
+    from
+        user u1_0 
+    where
+        u1_0.email=?
+2026-05-29 03:05:14.812 TRACE 90130 --- [http-nio-0.0.0.0-8000-exec-3] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [admin@example.com]
+2026-05-29 03:05:14.813  INFO 90130 --- [http-nio-0.0.0.0-8000-exec-3] c.backend.Service.Impl.AuthServiceImpl   : Login successful for 'admin@example.com'
+2026-05-29 03:07:17.327  WARN 90130 --- [http-nio-0.0.0.0-8000-exec-5] com.backend.Service.JwtService           : JWT parsing failed: JWT expired 226147326 milliseconds ago at 2026-05-26T06:33:10.000Z. Current time: 2026-05-28T21:22:17.326Z. Allowed clock skew: 0 milliseconds.
+2026-05-29 03:07:17.332  WARN 90130 --- [http-nio-0.0.0.0-8000-exec-5] c.b.Filter.JwtAuthenticationEntryPoint   : Unauthorized access attempt on '/api/v1/admin/products': Full authentication is required to access this resourceAnonymousAuthenticationToken [Principal=anonymousUser, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_ANONYMOUS]]
+2026-05-29 03:07:52.273  INFO 90130 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-05-29 03:07:52.287  INFO 90130 --- [Thread-1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-29 03:07:52.296  INFO 90130 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-05-29 03:07:52.319  INFO 90130 --- [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-29 03:07:52.324  INFO 90130 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-05-29 03:07:52.328  INFO 90130 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-05-29 03:07:52.391  INFO 90130 --- [restartedMain] com.backend.BackendApplication           : Starting BackendApplication using Java 25.0.2 with PID 90130 (/Users/bibeksah/Desktop/Projects/test-java/backend/target/classes started by bibeksah in /Users/bibeksah/Desktop/Projects/test-java/backend)
+2026-05-29 03:07:52.391 DEBUG 90130 --- [restartedMain] com.backend.BackendApplication           : Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-05-29 03:07:52.391  INFO 90130 --- [restartedMain] com.backend.BackendApplication           : No active profile set, falling back to 1 default profile: "default"
+2026-05-29 03:07:52.473  INFO 90130 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-05-29 03:07:52.473  INFO 90130 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-29 03:07:52.481  INFO 90130 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 5 JPA repository interfaces.
+2026-05-29 03:07:52.484  INFO 90130 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-05-29 03:07:52.484  INFO 90130 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-05-29 03:07:52.486  INFO 90130 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.OrderRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 03:07:52.486  INFO 90130 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.PaymentRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 03:07:52.487  INFO 90130 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 03:07:52.487  INFO 90130 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.RoleRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 03:07:52.487  INFO 90130 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 03:07:52.487  INFO 90130 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 Redis repository interfaces.
+2026-05-29 03:07:52.560  INFO 90130 --- [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8000 (http)
+2026-05-29 03:07:52.560  INFO 90130 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-29 03:07:52.560  INFO 90130 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-29 03:07:52.566  INFO 90130 --- [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 174 ms
+2026-05-29 03:07:52.585  INFO 90130 --- [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-29 03:07:52.594  INFO 90130 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-29 03:07:52.594  INFO 90130 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-05-29 03:07:52.603  INFO 90130 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@8a3ddb0
+2026-05-29 03:07:52.603  INFO 90130 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-05-29 03:07:52.604  WARN 90130 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-29 03:07:52.605  INFO 90130 --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/spring-backend]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.6
+	Default catalog/schema: spring-backend/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-29 03:07:52.675  INFO 90130 --- [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-29 03:07:52.703  INFO 90130 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-29 03:07:52.775  INFO 90130 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter jwtFilterRegistration was not registered (disabled)
+2026-05-29 03:07:52.916  WARN 90130 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-29 03:07:53.658  INFO 90230 --- [restartedMain] com.backend.BackendApplication           : Starting BackendApplication using Java 25.0.2 with PID 90230 (/Users/bibeksah/Desktop/Projects/test-java/backend/target/classes started by bibeksah in /Users/bibeksah/Desktop/Projects/test-java/backend)
+2026-05-29 03:07:53.659 DEBUG 90230 --- [restartedMain] com.backend.BackendApplication           : Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-05-29 03:07:53.659  INFO 90230 --- [restartedMain] com.backend.BackendApplication           : No active profile set, falling back to 1 default profile: "default"
+2026-05-29 03:07:53.673  INFO 90230 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-05-29 03:07:53.674  INFO 90230 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-05-29 03:07:53.977  INFO 90230 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-05-29 03:07:53.977  INFO 90230 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-29 03:07:54.025  INFO 90230 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 5 JPA repository interfaces.
+2026-05-29 03:07:54.039  INFO 90230 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-05-29 03:07:54.039  INFO 90230 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-05-29 03:07:54.045  INFO 90230 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.OrderRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 03:07:54.045  INFO 90230 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.PaymentRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 03:07:54.045  INFO 90230 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 03:07:54.045  INFO 90230 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.RoleRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 03:07:54.045  INFO 90230 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 03:07:54.045  INFO 90230 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2026-05-29 03:07:54.316  INFO 90230 --- [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8000 (http)
+2026-05-29 03:07:54.321  INFO 90230 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-29 03:07:54.321  INFO 90230 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-29 03:07:54.332  INFO 90230 --- [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 658 ms
+2026-05-29 03:07:54.384  INFO 90230 --- [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-29 03:07:54.404  INFO 90230 --- [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-29 03:07:54.543  INFO 90230 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-29 03:07:54.557  INFO 90230 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-29 03:07:54.673  INFO 90230 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@784181f7
+2026-05-29 03:07:54.673  INFO 90230 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-29 03:07:54.694  WARN 90230 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-29 03:07:54.699  INFO 90230 --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/spring-backend]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.6
+	Default catalog/schema: spring-backend/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-29 03:07:55.125  INFO 90230 --- [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-29 03:07:55.167  INFO 90230 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-29 03:07:55.196  INFO 90230 --- [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-29 03:07:55.304  INFO 90230 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter jwtFilterRegistration was not registered (disabled)
+2026-05-29 03:07:55.888  WARN 90230 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-29 03:07:56.155  WARN 90230 --- [restartedMain] i.n.r.d.DnsServerAddressStreamProviders  : Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+2026-05-29 03:07:56.401  INFO 90230 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-05-29 03:07:56.443  INFO 90230 --- [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8000 (http) with context path '/api/v1'
+2026-05-29 03:07:56.448  INFO 90230 --- [restartedMain] com.backend.BackendApplication           : Started BackendApplication in 2.945 seconds (process running for 3.237)
+2026-05-29 03:07:56.480 DEBUG 90230 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        r1_0.role_id,
+        r1_0.created_at,
+        r1_0.created_by,
+        r1_0.deleted,
+        r1_0.deleted_at,
+        r1_0.deleted_by,
+        r1_0.description,
+        r1_0.name,
+        r1_0.updated_at,
+        r1_0.updated_by 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-05-29 03:07:56.480 TRACE 90230 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:ENUM) <- [ADMIN]
+2026-05-29 03:07:56.493 DEBUG 90230 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        r1_0.role_id,
+        r1_0.created_at,
+        r1_0.created_by,
+        r1_0.deleted,
+        r1_0.deleted_at,
+        r1_0.deleted_by,
+        r1_0.description,
+        r1_0.name,
+        r1_0.updated_at,
+        r1_0.updated_by 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-05-29 03:07:56.493 TRACE 90230 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:ENUM) <- [USER]
+2026-05-29 03:07:56.494 DEBUG 90230 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        r1_0.role_id,
+        r1_0.created_at,
+        r1_0.created_by,
+        r1_0.deleted,
+        r1_0.deleted_at,
+        r1_0.deleted_by,
+        r1_0.description,
+        r1_0.name,
+        r1_0.updated_at,
+        r1_0.updated_by 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-05-29 03:07:56.494 TRACE 90230 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:ENUM) <- [MANAGER]
+2026-05-29 03:07:56.495 DEBUG 90230 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        r1_0.role_id,
+        r1_0.created_at,
+        r1_0.created_by,
+        r1_0.deleted,
+        r1_0.deleted_at,
+        r1_0.deleted_by,
+        r1_0.description,
+        r1_0.name,
+        r1_0.updated_at,
+        r1_0.updated_by 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-05-29 03:07:56.495 TRACE 90230 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:ENUM) <- [GUEST]
+2026-05-29 03:07:56.496 DEBUG 90230 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        u1_0.user_id,
+        u1_0.created_at,
+        u1_0.created_by,
+        u1_0.deleted,
+        u1_0.deleted_at,
+        u1_0.deleted_by,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.password,
+        u1_0.updated_at,
+        u1_0.updated_by 
+    from
+        user u1_0 
+    where
+        u1_0.email=?
+2026-05-29 03:07:56.496 TRACE 90230 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [admin@example.com]
+2026-05-29 03:07:56.838  INFO 90230 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-29 03:08:00.594  WARN 90230 --- [http-nio-0.0.0.0-8000-exec-2] com.backend.Service.JwtService           : JWT parsing failed: JWT expired 226190594 milliseconds ago at 2026-05-26T06:33:10.000Z. Current time: 2026-05-28T21:23:00.594Z. Allowed clock skew: 0 milliseconds.
+2026-05-29 03:08:00.597  WARN 90230 --- [http-nio-0.0.0.0-8000-exec-2] c.b.Filter.JwtAuthenticationEntryPoint   : Unauthorized access attempt on '/api/v1/admin/products': Full authentication is required to access this resourceAnonymousAuthenticationToken [Principal=anonymousUser, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_ANONYMOUS]]
+2026-05-29 03:08:25.223  INFO 90230 --- [http-nio-0.0.0.0-8000-exec-3] c.b.S.Impl.CustomUserDetailsService      : Loading user by email: admin@example.com
+2026-05-29 03:08:25.224 DEBUG 90230 --- [http-nio-0.0.0.0-8000-exec-3] org.hibernate.SQL                        : 
+    select
+        u1_0.user_id,
+        u1_0.created_at,
+        u1_0.created_by,
+        u1_0.deleted,
+        u1_0.deleted_at,
+        u1_0.deleted_by,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.password,
+        u1_0.updated_at,
+        u1_0.updated_by 
+    from
+        user u1_0 
+    where
+        u1_0.email=?
+2026-05-29 03:08:25.224 TRACE 90230 --- [http-nio-0.0.0.0-8000-exec-3] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [admin@example.com]
+2026-05-29 03:08:25.227 DEBUG 90230 --- [http-nio-0.0.0.0-8000-exec-3] org.hibernate.SQL                        : 
+    select
+        r1_0.user_id,
+        r1_1.role_id,
+        r1_1.created_at,
+        r1_1.created_by,
+        r1_1.deleted,
+        r1_1.deleted_at,
+        r1_1.deleted_by,
+        r1_1.description,
+        r1_1.name,
+        r1_1.updated_at,
+        r1_1.updated_by 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.role_id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2026-05-29 03:08:25.227 TRACE 90230 --- [http-nio-0.0.0.0-8000-exec-3] org.hibernate.orm.jdbc.bind              : binding parameter (1:UUID) <- [7cc4beba-2e1c-42fb-998c-e79d76e81b0d]
+2026-05-29 03:08:25.229  INFO 90230 --- [http-nio-0.0.0.0-8000-exec-3] c.b.S.Impl.CustomUserDetailsService      : User 'admin@example.com' loaded with roles: [ROLE_ADMIN]
+2026-05-29 03:08:25.307 DEBUG 90230 --- [http-nio-0.0.0.0-8000-exec-3] org.hibernate.SQL                        : 
+    select
+        u1_0.user_id,
+        u1_0.created_at,
+        u1_0.created_by,
+        u1_0.deleted,
+        u1_0.deleted_at,
+        u1_0.deleted_by,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.password,
+        u1_0.updated_at,
+        u1_0.updated_by 
+    from
+        user u1_0 
+    where
+        u1_0.email=?
+2026-05-29 03:08:25.307 TRACE 90230 --- [http-nio-0.0.0.0-8000-exec-3] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [admin@example.com]
+2026-05-29 03:08:25.308  INFO 90230 --- [http-nio-0.0.0.0-8000-exec-3] c.backend.Service.Impl.AuthServiceImpl   : Login successful for 'admin@example.com'
+2026-05-29 03:08:42.750  INFO 90230 --- [http-nio-0.0.0.0-8000-exec-4] c.b.S.Impl.CustomUserDetailsService      : Loading user by email: admin@example.com
+2026-05-29 03:08:42.750 DEBUG 90230 --- [http-nio-0.0.0.0-8000-exec-4] org.hibernate.SQL                        : 
+    select
+        u1_0.user_id,
+        u1_0.created_at,
+        u1_0.created_by,
+        u1_0.deleted,
+        u1_0.deleted_at,
+        u1_0.deleted_by,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.password,
+        u1_0.updated_at,
+        u1_0.updated_by 
+    from
+        user u1_0 
+    where
+        u1_0.email=?
+2026-05-29 03:08:42.751 TRACE 90230 --- [http-nio-0.0.0.0-8000-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [admin@example.com]
+2026-05-29 03:08:42.753 DEBUG 90230 --- [http-nio-0.0.0.0-8000-exec-4] org.hibernate.SQL                        : 
+    select
+        r1_0.user_id,
+        r1_1.role_id,
+        r1_1.created_at,
+        r1_1.created_by,
+        r1_1.deleted,
+        r1_1.deleted_at,
+        r1_1.deleted_by,
+        r1_1.description,
+        r1_1.name,
+        r1_1.updated_at,
+        r1_1.updated_by 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.role_id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2026-05-29 03:08:42.753 TRACE 90230 --- [http-nio-0.0.0.0-8000-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter (1:UUID) <- [7cc4beba-2e1c-42fb-998c-e79d76e81b0d]
+2026-05-29 03:08:42.755  INFO 90230 --- [http-nio-0.0.0.0-8000-exec-4] c.b.S.Impl.CustomUserDetailsService      : User 'admin@example.com' loaded with roles: [ROLE_ADMIN]
+2026-05-29 03:08:42.759 DEBUG 90230 --- [http-nio-0.0.0.0-8000-exec-4] c.b.Filter.JwtAuthenticationFilter       : Authenticated 'admin@example.com' on '/api/v1/admin/products'
+2026-05-29 03:08:42.807  INFO 90230 --- [http-nio-0.0.0.0-8000-exec-4] c.b.S.Impl.AdminProductServiceImpl       : Product created: Nike Air Max 270 [43b502a5-2b36-412e-b81b-1d57ec126257]
+2026-05-29 03:08:42.810 DEBUG 90230 --- [http-nio-0.0.0.0-8000-exec-4] org.hibernate.SQL                        : 
+    insert 
+    into
+        products
+        (created_at, created_by, deleted, deleted_at, deleted_by, description, discount, name, price, stock, updated_at, updated_by, product_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-05-29 03:08:42.811 TRACE 90230 --- [http-nio-0.0.0.0-8000-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter (1:TIMESTAMP_UTC) <- [2026-05-28T21:23:42.804438Z]
+2026-05-29 03:08:42.811 TRACE 90230 --- [http-nio-0.0.0.0-8000-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter (2:VARCHAR) <- [admin@example.com]
+2026-05-29 03:08:42.811 TRACE 90230 --- [http-nio-0.0.0.0-8000-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter (3:BOOLEAN) <- [false]
+2026-05-29 03:08:42.811 TRACE 90230 --- [http-nio-0.0.0.0-8000-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter (4:TIMESTAMP_UTC) <- [null]
+2026-05-29 03:08:42.811 TRACE 90230 --- [http-nio-0.0.0.0-8000-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter (5:VARCHAR) <- [null]
+2026-05-29 03:08:42.811 TRACE 90230 --- [http-nio-0.0.0.0-8000-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter (6:VARCHAR) <- [Lightweight running shoe with Air Max cushioning]
+2026-05-29 03:08:42.811 TRACE 90230 --- [http-nio-0.0.0.0-8000-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter (7:DOUBLE) <- [10.0]
+2026-05-29 03:08:42.811 TRACE 90230 --- [http-nio-0.0.0.0-8000-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter (8:VARCHAR) <- [Nike Air Max 270]
+2026-05-29 03:08:42.811 TRACE 90230 --- [http-nio-0.0.0.0-8000-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter (9:DOUBLE) <- [150.0]
+2026-05-29 03:08:42.811 TRACE 90230 --- [http-nio-0.0.0.0-8000-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter (10:INTEGER) <- [100]
+2026-05-29 03:08:42.811 TRACE 90230 --- [http-nio-0.0.0.0-8000-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter (11:TIMESTAMP_UTC) <- [2026-05-28T21:23:42.804438Z]
+2026-05-29 03:08:42.811 TRACE 90230 --- [http-nio-0.0.0.0-8000-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter (12:VARCHAR) <- [admin@example.com]
+2026-05-29 03:08:42.811 TRACE 90230 --- [http-nio-0.0.0.0-8000-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter (13:UUID) <- [43b502a5-2b36-412e-b81b-1d57ec126257]
+2026-05-29 03:09:11.992  WARN 90230 --- [http-nio-0.0.0.0-8000-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2026-05-29 03:09:35.539  WARN 90230 --- [http-nio-0.0.0.0-8000-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2026-05-29 03:09:54.233  WARN 90230 --- [http-nio-0.0.0.0-8000-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2026-05-29 03:10:15.735  INFO 90287 --- [restartedMain] com.backend.BackendApplication           : Starting BackendApplication using Java 25.0.2 with PID 90287 (/Users/bibeksah/Desktop/Projects/test-java/backend/target/classes started by bibeksah in /Users/bibeksah/Desktop/Projects/test-java/backend)
+2026-05-29 03:10:15.736 DEBUG 90287 --- [restartedMain] com.backend.BackendApplication           : Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-05-29 03:10:15.736  INFO 90287 --- [restartedMain] com.backend.BackendApplication           : No active profile set, falling back to 1 default profile: "default"
+2026-05-29 03:10:15.750  INFO 90287 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-05-29 03:10:15.750  INFO 90287 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-05-29 03:10:16.062  INFO 90287 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-05-29 03:10:16.063  INFO 90287 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-29 03:10:16.111  INFO 90287 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 5 JPA repository interfaces.
+2026-05-29 03:10:16.124  INFO 90287 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-05-29 03:10:16.125  INFO 90287 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-05-29 03:10:16.130  INFO 90287 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.OrderRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 03:10:16.130  INFO 90287 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.PaymentRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 03:10:16.130  INFO 90287 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 03:10:16.130  INFO 90287 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.RoleRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 03:10:16.131  INFO 90287 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 03:10:16.131  INFO 90287 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2026-05-29 03:10:16.396  INFO 90287 --- [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8000 (http)
+2026-05-29 03:10:16.400  INFO 90287 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-29 03:10:16.401  INFO 90287 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-29 03:10:16.412  INFO 90287 --- [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 661 ms
+2026-05-29 03:10:16.464  INFO 90287 --- [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-29 03:10:16.485  INFO 90287 --- [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-29 03:10:16.623  INFO 90287 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-29 03:10:16.637  INFO 90287 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-29 03:10:16.750  INFO 90287 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6c7e5be6
+2026-05-29 03:10:16.751  INFO 90287 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-29 03:10:16.771  WARN 90287 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-29 03:10:16.777  INFO 90287 --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/spring-backend]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.6
+	Default catalog/schema: spring-backend/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-29 03:10:17.197  INFO 90287 --- [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-29 03:10:17.240  INFO 90287 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-29 03:10:17.269  INFO 90287 --- [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-29 03:10:17.377  INFO 90287 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter jwtFilterRegistration was not registered (disabled)
+2026-05-29 03:10:18.007  WARN 90287 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-29 03:10:18.297  WARN 90287 --- [restartedMain] i.n.r.d.DnsServerAddressStreamProviders  : Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+2026-05-29 03:10:18.546  INFO 90287 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-05-29 03:10:18.589  INFO 90287 --- [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8000 (http) with context path '/api/v1'
+2026-05-29 03:10:18.594  INFO 90287 --- [restartedMain] com.backend.BackendApplication           : Started BackendApplication in 3.001 seconds (process running for 3.238)
+2026-05-29 03:10:18.635 DEBUG 90287 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        r1_0.role_id,
+        r1_0.created_at,
+        r1_0.created_by,
+        r1_0.deleted,
+        r1_0.deleted_at,
+        r1_0.deleted_by,
+        r1_0.description,
+        r1_0.name,
+        r1_0.updated_at,
+        r1_0.updated_by 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-05-29 03:10:18.635 TRACE 90287 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:ENUM) <- [ADMIN]
+2026-05-29 03:10:18.648 DEBUG 90287 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        r1_0.role_id,
+        r1_0.created_at,
+        r1_0.created_by,
+        r1_0.deleted,
+        r1_0.deleted_at,
+        r1_0.deleted_by,
+        r1_0.description,
+        r1_0.name,
+        r1_0.updated_at,
+        r1_0.updated_by 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-05-29 03:10:18.648 TRACE 90287 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:ENUM) <- [USER]
+2026-05-29 03:10:18.649 DEBUG 90287 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        r1_0.role_id,
+        r1_0.created_at,
+        r1_0.created_by,
+        r1_0.deleted,
+        r1_0.deleted_at,
+        r1_0.deleted_by,
+        r1_0.description,
+        r1_0.name,
+        r1_0.updated_at,
+        r1_0.updated_by 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-05-29 03:10:18.649 TRACE 90287 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:ENUM) <- [MANAGER]
+2026-05-29 03:10:18.650 DEBUG 90287 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        r1_0.role_id,
+        r1_0.created_at,
+        r1_0.created_by,
+        r1_0.deleted,
+        r1_0.deleted_at,
+        r1_0.deleted_by,
+        r1_0.description,
+        r1_0.name,
+        r1_0.updated_at,
+        r1_0.updated_by 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-05-29 03:10:18.650 TRACE 90287 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:ENUM) <- [GUEST]
+2026-05-29 03:10:18.651 DEBUG 90287 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        u1_0.user_id,
+        u1_0.created_at,
+        u1_0.created_by,
+        u1_0.deleted,
+        u1_0.deleted_at,
+        u1_0.deleted_by,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.password,
+        u1_0.updated_at,
+        u1_0.updated_by 
+    from
+        user u1_0 
+    where
+        u1_0.email=?
+2026-05-29 03:10:18.652 TRACE 90287 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [admin@example.com]
+2026-05-29 03:10:18.999  INFO 90287 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-29 03:10:19.734 DEBUG 90287 --- [http-nio-0.0.0.0-8000-exec-2] org.hibernate.SQL                        : 
+    select
+        p1_0.product_id,
+        p1_0.created_at,
+        p1_0.created_by,
+        p1_0.deleted,
+        p1_0.deleted_at,
+        p1_0.deleted_by,
+        p1_0.description,
+        p1_0.discount,
+        p1_0.name,
+        p1_0.price,
+        p1_0.stock,
+        p1_0.updated_at,
+        p1_0.updated_by 
+    from
+        products p1_0 
+    where
+        p1_0.deleted=false 
+    order by
+        p1_0.created_at desc 
+    limit
+        ?
+2026-05-29 03:10:19.734 TRACE 90287 --- [http-nio-0.0.0.0-8000-exec-2] org.hibernate.orm.jdbc.bind              : binding parameter (1:INTEGER) <- [10]
+2026-05-29 03:10:32.028  INFO 90287 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-05-29 03:10:32.031  INFO 90287 --- [Thread-1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-29 03:10:32.032  INFO 90287 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-05-29 03:10:32.040  INFO 90287 --- [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-29 03:10:32.041  INFO 90287 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-05-29 03:10:32.042  INFO 90287 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-05-29 03:10:32.085  INFO 90287 --- [restartedMain] com.backend.BackendApplication           : Starting BackendApplication using Java 25.0.2 with PID 90287 (/Users/bibeksah/Desktop/Projects/test-java/backend/target/classes started by bibeksah in /Users/bibeksah/Desktop/Projects/test-java/backend)
+2026-05-29 03:10:32.085 DEBUG 90287 --- [restartedMain] com.backend.BackendApplication           : Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-05-29 03:10:32.085  INFO 90287 --- [restartedMain] com.backend.BackendApplication           : No active profile set, falling back to 1 default profile: "default"
+2026-05-29 03:10:32.167  INFO 90287 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-05-29 03:10:32.167  INFO 90287 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-29 03:10:32.172  INFO 90287 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 5 JPA repository interfaces.
+2026-05-29 03:10:32.175  INFO 90287 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-05-29 03:10:32.175  INFO 90287 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-05-29 03:10:32.177  INFO 90287 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.OrderRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 03:10:32.177  INFO 90287 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.PaymentRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 03:10:32.177  INFO 90287 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 03:10:32.177  INFO 90287 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.RoleRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 03:10:32.177  INFO 90287 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.backend.Repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-05-29 03:10:32.177  INFO 90287 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 Redis repository interfaces.
+2026-05-29 03:10:32.243  INFO 90287 --- [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8000 (http)
+2026-05-29 03:10:32.243  INFO 90287 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-29 03:10:32.244  INFO 90287 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-29 03:10:32.253  INFO 90287 --- [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 168 ms
+2026-05-29 03:10:32.296  INFO 90287 --- [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-29 03:10:32.307  INFO 90287 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-29 03:10:32.308  INFO 90287 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-05-29 03:10:32.316  INFO 90287 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@411481c5
+2026-05-29 03:10:32.316  INFO 90287 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-05-29 03:10:32.316  WARN 90287 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-29 03:10:32.317  INFO 90287 --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/spring-backend]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.6
+	Default catalog/schema: spring-backend/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-29 03:10:32.376  INFO 90287 --- [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-29 03:10:32.403  INFO 90287 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-29 03:10:32.462  INFO 90287 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter jwtFilterRegistration was not registered (disabled)
+2026-05-29 03:10:32.555  WARN 90287 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-29 03:10:32.799  INFO 90287 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-05-29 03:10:32.821  INFO 90287 --- [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8000 (http) with context path '/api/v1'
+2026-05-29 03:10:32.822  INFO 90287 --- [restartedMain] com.backend.BackendApplication           : Started BackendApplication in 0.748 seconds (process running for 17.467)
+2026-05-29 03:10:32.824 DEBUG 90287 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        r1_0.role_id,
+        r1_0.created_at,
+        r1_0.created_by,
+        r1_0.deleted,
+        r1_0.deleted_at,
+        r1_0.deleted_by,
+        r1_0.description,
+        r1_0.name,
+        r1_0.updated_at,
+        r1_0.updated_by 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-05-29 03:10:32.824 TRACE 90287 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:ENUM) <- [ADMIN]
+2026-05-29 03:10:32.825 DEBUG 90287 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        r1_0.role_id,
+        r1_0.created_at,
+        r1_0.created_by,
+        r1_0.deleted,
+        r1_0.deleted_at,
+        r1_0.deleted_by,
+        r1_0.description,
+        r1_0.name,
+        r1_0.updated_at,
+        r1_0.updated_by 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-05-29 03:10:32.826 TRACE 90287 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:ENUM) <- [USER]
+2026-05-29 03:10:32.826 DEBUG 90287 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        r1_0.role_id,
+        r1_0.created_at,
+        r1_0.created_by,
+        r1_0.deleted,
+        r1_0.deleted_at,
+        r1_0.deleted_by,
+        r1_0.description,
+        r1_0.name,
+        r1_0.updated_at,
+        r1_0.updated_by 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-05-29 03:10:32.826 TRACE 90287 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:ENUM) <- [MANAGER]
+2026-05-29 03:10:32.827 DEBUG 90287 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        r1_0.role_id,
+        r1_0.created_at,
+        r1_0.created_by,
+        r1_0.deleted,
+        r1_0.deleted_at,
+        r1_0.deleted_by,
+        r1_0.description,
+        r1_0.name,
+        r1_0.updated_at,
+        r1_0.updated_by 
+    from
+        roles r1_0 
+    where
+        r1_0.name=?
+2026-05-29 03:10:32.827 TRACE 90287 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:ENUM) <- [GUEST]
+2026-05-29 03:10:32.828 DEBUG 90287 --- [restartedMain] org.hibernate.SQL                        : 
+    select
+        u1_0.user_id,
+        u1_0.created_at,
+        u1_0.created_by,
+        u1_0.deleted,
+        u1_0.deleted_at,
+        u1_0.deleted_by,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.password,
+        u1_0.updated_at,
+        u1_0.updated_by 
+    from
+        user u1_0 
+    where
+        u1_0.email=?
+2026-05-29 03:10:32.828 TRACE 90287 --- [restartedMain] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [admin@example.com]
+2026-05-29 03:10:32.830  INFO 90287 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged

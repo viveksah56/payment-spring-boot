@@ -40,6 +40,7 @@ public class SecurityConfig {
                         .requestMatchers(HttpMethod.POST, "/register", "/login").permitAll()
                         .requestMatchers(HttpMethod.POST, "/webhooks/**").permitAll()
                         .requestMatchers(HttpMethod.GET, "/products", "/products/**").permitAll()
+                        .requestMatchers(HttpMethod.GET, "/admin/products", "/admin/products/**").hasRole("ADMIN")
                         .requestMatchers("/actuator/health").permitAll()
                         .anyRequest().authenticated()
                 )
